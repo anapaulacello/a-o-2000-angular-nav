@@ -1,0 +1,14 @@
+<button class="nav__button" (click)="toggleActive()">MENU</button>
+<nav >
+    
+    <div class="container" [ngClass]="{'on':button , 'off':!button}">
+      <ul>
+        <li *ngFor="let element of navigation">
+          <a routerLink="{{ element.link }}"><img (click)="toggleActive()" src="{{element.icon.src}}" alt="" ></a>
+          
+          <a class="letras" (click)="toggleActive()" routerLink="{{ element.link }}">{{ element.name }}</a>
+        </li>
+      </ul>
+    </div>
+    
+</nav>
