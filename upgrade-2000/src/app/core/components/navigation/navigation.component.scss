@@ -4,11 +4,12 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
+    
     .nav__button{
         box-shadow:inset 0px 1px 3px 0px #91b8b3;
         background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
         background-color:#768d87;
-        border-radius:5px;
         border:1px solid #566963;
         cursor:pointer;
         color:#ffffff;
@@ -21,19 +22,24 @@ nav{
         border-radius: 250px;
         margin: 10px;
        
+        &:hover{
+            background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+            background-color:#6c7c7c;
+        }
+        
+        &:active{
+            position:relative;
+            top:1px;
+        }
     }
-    .nav__button:hover{
-        background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-        background-color:#6c7c7c;
-    }
-    
-    .nav__button:active{
-        position:relative;
-        top:1px;
-    }
+
     .container{
         height:auto;
         width: 100%;
+        /* overflow-x: hidden;
+        min-height: 400px;
+        position: relative;
+        left: 0; */
         ul{
             list-style: none;
             display: flex;
@@ -47,6 +53,8 @@ nav{
                 align-items: center;
                 img{
                     padding: 10px;
+                    width: 40px;
+                    height: auto;
                 }
                 a{
                     text-decoration: none;
@@ -66,9 +74,10 @@ nav{
     
 }
 .on{
-   display: none;
+    background-color: gray;
    
 }
 .off{
-    background-color: gray;
+    
+    display: none;
 }
