@@ -1,6 +1,7 @@
 
-<nav >
-  <button class="nav__button" (click)="toggleActive()">MENU</button>
+<nav>
+  <div >
+    <button class="nav__button" [ngStyle]="{'background-color':'#043464'}"  (click)="toggleActive()">MENU</button>
     <div class="container" [ngClass]="{'on':button , 'off':!button}">
       <ul>
         <li *ngFor="let element of navigation">
@@ -10,5 +11,7 @@
         </li>
       </ul>
     </div>
+  </div>
+
     
 </nav>

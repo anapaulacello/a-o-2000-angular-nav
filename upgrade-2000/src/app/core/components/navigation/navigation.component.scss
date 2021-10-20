@@ -36,17 +36,14 @@ nav{
     .container{
         height:auto;
         width: 100%;
-        overflow-x: hidden;
-        min-height: 400px;
-        position: relative;
-        left: 0;
+        position: absolute;
         ul{
             list-style: none;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            padding-top: 30px;
+            padding: 33px;
 
             li{
                 display: flex;
@@ -71,6 +68,7 @@ nav{
     .letras{
         display: none;
     }
+
     
 }
 .on{
