@@ -1,6 +1,6 @@
-<button class="nav__button" (click)="toggleActive()">MENU</button>
+
 <nav >
-    
+  <button class="nav__button"  (click)="toggleActive()">MENU</button>
     <div class="container" [ngClass]="{'on':button , 'off':!button}">
       <ul>
         <li *ngFor="let element of navigation">
